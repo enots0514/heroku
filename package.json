@@ -1,0 +1,18 @@
+{
+  "name": "sample-register-form",
+  "version": "1.0.0",
+  "description": "로그인 및 회원가입 샘플 폼 만들기",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "atti-sphinx",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "pug": "^3.0.2"
+  }
+}

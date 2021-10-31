@@ -1,0 +1,16 @@
+extends layout
+
+block content  
+    div.login-page
+            div.form
+                form.login-form(method="POST" action="/login")
+                    input(type="text" id="id" name="id" placeholder="아이디")
+                    input(type="password" id="pwd" name="pwd" placeholder="비밀번호")
+                    button login
+                    p #{success}
+                    p.message Not registered? 
+                        a(href="/register") Create an account 
+    script. 
+           document.querySelector('.subtitle_text').textContent="로그인 하셨나요?";
+    
+                                

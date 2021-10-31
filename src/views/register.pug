@@ -1,0 +1,18 @@
+extends layout  
+
+block content
+        div.login-page
+            div.form
+                form.login-form(method="POST" action="/register")
+                    input(type="text" name="id" id="id" placeholder="아이디" required)
+                    input(type="text" name="name" id="name" placeholder="이름" required)
+                    input(type="password" name="pwd" id="pwd" placeholder="비밀번호" required)
+                    input(type="password" name="confirm" id="confirm" placeholder="비밀번호 확인" required)
+                    button Sign Up
+                    p #{whyfail}
+                    p.message Already registered? 
+                        a(href="/") login  
+         
+        script. 
+              document.querySelector('.subtitle_text').innerHTML = "회원가입";
+                              

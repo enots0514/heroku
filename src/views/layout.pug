@@ -1,0 +1,25 @@
+doctype html
+html(lang="ko")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Sphinx'Coding Story
+        link(rel="stylesheet" href="/css/start-page.css")
+        link(rel="stylesheet" href="/css/login.css")
+    body 
+        - const title = "Sphinx'Coding Story"; 
+        header 
+            h1.title_text #{title}  
+        main 
+            section#left
+                h1.title_text #{title}
+                h2.subtitle 1) 폴더 만들기 
+                xmp 2) npm init
+                | 3) express
+            section#right 
+                 h1.subtitle_text    
+                 block content  
+
+        footer 
+            p 이 사이트는 #{title}
